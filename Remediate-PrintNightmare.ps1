@@ -4,9 +4,9 @@
 .DESCRIPTION
   Sets the registry value for "Allow Print Spooler to accept client connections" group policy. This is Microsoft's recommendation for the zero day (CVE-2021-34527 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527).
 .PARAMETER ScriptLogLocation
-    The directory in which you would like the log file
+    The directory in which you would like the log file.
 .PARAMETER LogFileName
-    The name (with extension) you would like for the log file
+    The name (with extension) you would like for the log file.
 .PARAMETER RegPath
     The path to the registry key that will contain this value.
 .PARAMETER ValueName
