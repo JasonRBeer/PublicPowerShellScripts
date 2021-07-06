@@ -32,9 +32,9 @@
 
 # Parameters
 Param (
-    [String]$ScriptLogLocation = "C:\ExampleFolder\Remediate-PrintNightmare",
+    [string]$ScriptLogLocation = "C:\ExampleFolder\Remediate-PrintNightmare",
     [string]$LogFileName = "Remediate-PrintNightmare.log",
-    [String]$RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers",
+    [string]$RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers",
     [string]$ValueName = "RegisterSpoolerRemoteRpcEndPoint",
     [string]$ValueType = "DWord",
     [string]$Value = "2",
