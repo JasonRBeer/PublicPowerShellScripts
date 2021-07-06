@@ -20,7 +20,7 @@
 .INPUTS
   None
 .OUTPUTS
-  Log file stored in C:\IT\ScriptLogs\Remediate-PrintNightmare\Remediate-PrintNightmare.log
+  Log file stored in location specified in parameters.
 .NOTES
   Version:        1.0
   Author:         Jason Beer
