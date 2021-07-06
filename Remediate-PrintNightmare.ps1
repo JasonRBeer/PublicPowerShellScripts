@@ -14,7 +14,7 @@
 .PARAMETER ValueType
     The type of registry value being added or changed.
 .PARAMETER Value
-    The enrollment token that was generated in the Google Admin portal.
+    The registry value.
 .PARAMETER RestartSpooler
     Restart the spooler service after adding the registry key?
 .INPUTS
