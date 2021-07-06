@@ -27,12 +27,12 @@
   Creation Date:  7/6/2021
   Purpose/Change: Initial script development
 .EXAMPLE
-  Remediate-PrintNightmare -RegPath "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers" -ValueName "RegisterSpoolerRemoteRpcEndPoint" -ValueType "DWord" -Value "2" -RestartSpooler $True
+  Remediate-PrintNightmare -ScriptLogLocation "C:\ExampleFolder\Remediate-PrintNightmare" -RegPath "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers" -ValueName "RegisterSpoolerRemoteRpcEndPoint" -ValueType "DWord" -Value "2" -RestartSpooler $True
 #>
 
 # Parameters
 Param (
-    [String]$ScriptLogLocation = "C:\IT\ScriptLogs\Remediate-PrintNightmare",
+    [String]$ScriptLogLocation = "C:\ExampleFolder\Remediate-PrintNightmare",
     [string]$LogFileName = "Remediate-PrintNightmare.log",
     [String]$RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers",
     [string]$ValueName = "RegisterSpoolerRemoteRpcEndPoint",
@@ -58,7 +58,7 @@ else{
     New-ItemProperty -Path $RegPath -Name $ValueName -Value $Value -PropertyType $ValueType -Force
 }
 
-#Restart the spooler service
+# Restart the spooler service
 If($RestartSpooler){
     Restart-Service -Name Spooler -Force
 }
