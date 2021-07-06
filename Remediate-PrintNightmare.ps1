@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-  Sets the registry value for "Allow Print Spooler to accept client connections" group policy.
+  Sets the registry value for "Allow Print Spooler to accept client connections" group policy and restarts the spooler service.
 .DESCRIPTION
   Sets the registry value for "Allow Print Spooler to accept client connections" group policy. This is Microsoft's recommendation for the zero day (CVE-2021-34527 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527).
 .PARAMETER ScriptLogLocation
